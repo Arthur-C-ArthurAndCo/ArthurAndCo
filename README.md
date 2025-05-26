@@ -33,7 +33,7 @@ ArthurAndCo/
 ## 🚀 Lancer le projet localement
 
 ```bash
-node server.js
+node serveur.js
 Le site sera disponible sur http://localhost:3000
 ```
 🔐 RGPD
