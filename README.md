@@ -1,3 +1,4 @@
+![logo_arthur](https://github.com/user-attachments/assets/ddef424b-126e-4ddf-8586-a106c0ae21a1)
 # Arthur & C° — Site officiel
 
 Bienvenue sur le dépôt du site web **Arthur & C°** !  
