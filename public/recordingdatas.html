@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enregistrement de données - Arthur & C°</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style_main.css" />
+  <link rel="icon" href="logo_arthur.jpg" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      min-height: 100vh;
+      overflow: auto;
+      padding: 0;
+    }
+
+    header.main-header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 15px 20px;
+      z-index: 10;
+      background-color: rgba(24, 255, 205, 0.5);
+    }
+
+    header.main-header h1 {
+      color: white;
+      font-size: 1.8em;
+      margin: 0;
+    }
+
+    header.main-header img.logo-header {
+      height: 50px;
+      border-radius: 10px;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 150px;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: center;
+    }
+
+    .content h1 {
+      color: #fff;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    .content p {
+      color: #fff;
+      font-size: 1.1em;
+      line-height: 1.6;
+      max-width: 800px;
+    }
+
+    canvas#background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  </style>
+</head>
+
+<body class="main-page">
+    <canvas id="background"></canvas>
+
+    <header class="main-header">
+        <img src="logo_arthur.jpg" alt="Logo Arthur & C°" class="logo-header" />
+        <h1>Arthur &amp; C°</h1>
+        <img src="Icones/home_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="Home" class="logo-header" onclick="window.location.href='main.html'" />
+    </header>
+
+<div class="content">
+  <h1>Bienvenue chez Arthur &amp; C° !</h1>
+  <h2>Règlement Général sur la Protection des Données (RGPD)</h2>
+  <p>
+    Nous pouvons venir à enregistrer des données anonymisées afin d'améliorer nos services. <br />
+    Consultez les modalités et les conditions d'enregistrement ci-dessous.
+  </p>
+  <p>
+    Conformément au <strong>Règlement Général sur la Protection des Données (RGPD)</strong>, nous nous engageons à traiter les données des utilisateurs avec le plus grand soin et dans le respect total de leur vie privée.
+  </p>
+  <p>
+    Les données que nous collectons peuvent inclure : <strong>les connexions au compte utilisateur</strong> (pour détecter les accès suspects), <strong>la localisation estimée via l'adresse IP</strong>, ainsi que <strong>le nom de l'appareil</strong> utilisé. Ces informations sont utilisées exclusivement pour <strong>identifier d'éventuelles tentatives de fraude ou de piratage</strong>.
+  </p>
+  <p>
+    Ces données sont <strong>analysées en temps réel</strong> et <strong>ne sont jamais conservées plus de 24 heures</strong> sur nos serveurs. Passé ce délai, elles sont automatiquement supprimées, sauf en cas d’enquête de sécurité temporaire.
+  </p>
+  <p>
+    <strong>Aucune information réellement personnelle</strong> — comme votre nom, votre adresse, votre numéro de téléphone ou votre adresse e-mail — <strong>n’est enregistrée ni demandée</strong> à ce stade. 
+  </p>
+  <p>
+    Les informations collectées ne sont <strong>pas utilisées à des fins commerciales, marketing ou publicitaires</strong>, et ne sont <strong>en aucun cas revendues à des tiers</strong>. Elles sont traitées automatiquement et anonymement, uniquement dans le but d’assurer le bon fonctionnement de nos services.
+  </p>
+  <p>
+    En continuant à utiliser nos services, vous acceptez cette politique de traitement des données. Si vous souhaitez en savoir plus, n’hésitez pas à nous contacter via la section « Contact » de notre site.
+  </p>
+  <h2>En vous remerciant de votre compréhension,</h2>
+  <h2>L'équipe Arthur & C°</h2>
+</div>
+
+  <script src="background.js"></script>
+</body>
+</html>

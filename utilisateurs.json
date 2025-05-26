@@ -1,0 +1,10 @@
+[
+  {
+    "identifiant": "admin",
+    "motdepasse": "azerty"
+  },
+  {
+    "identifiant": "Arthur",
+    "motdepasse": "1234"
+  }
+]

@@ -1,0 +1,17 @@
+# Node modules
+node_modules/
+
+# Fichiers temporaires
+*.log
+*.tmp
+*.swp
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Environnement local
+.env
+
+# Live Server / VSCode
+.vscode/
