@@ -2,7 +2,7 @@ document.querySelector("button").addEventListener("click", () => {
   const identifiant = document.getElementById("identifiant").value;
   const motdepasse = document.getElementById("motdepasse").value;
 
-  fetch("/connexion", {
+  fetch("https://arthurandco.onrender.com/connexion", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ identifiant, motdepasse }),
