@@ -6,5 +6,9 @@
   {
     "identifiant": "Arthur",
     "motdepasse": "1234"
+  },
+  {
+    "identifiant": "Invite",
+    "motdepasse": ""
   }
 ]
