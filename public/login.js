@@ -10,7 +10,7 @@ document.querySelector("button").addEventListener("click", () => {
     .then(res => res.json().then(data => ({ status: res.status, body: data })))
     .then(({ status, body }) => {
       if (status === 200) {
-        window.location.href = "/public/main.html";
+        window.location.href = "/main.html";
       } else {
         alert(body.message || "Erreur");
       }
