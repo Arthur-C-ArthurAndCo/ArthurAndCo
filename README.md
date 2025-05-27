@@ -10,7 +10,6 @@ Ce projet a été conçu avec HTML, CSS, JavaScript (et un peu de Node.js) pour 
 - Fenêtre modale d’avertissement RGPD
 - Politique de confidentialité légère
 - Système de style modulaire (plusieurs fichiers CSS)
-- Compatible avec le Live Server de VSCode
 
 ## 📁 Structure du projet
 
@@ -36,6 +35,8 @@ ArthurAndCo/
 node serveur.js
 Le site sera disponible sur http://localhost:3000
 ```
+
+Le lien d'utilisation du projet est https://arthurandco.onrender.com/ .
 🔐 RGPD
 Nous collectons uniquement des données **anonymisées**, conservées pendant moins de 24h, dans un but de sécurité.
 
