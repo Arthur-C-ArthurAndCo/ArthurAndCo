@@ -1,4 +1,90 @@
-<!-- BEGIN: GeoIPView.com IP Locator -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Que pouvons nous savoir de vous - Arthur & C°</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style_main.css" />
+  <link rel="icon" href="logo_arthur.jpg" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      min-height: 100vh;
+      overflow: auto;
+      padding: 0;
+    }
+
+    header.main-header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 15px 20px;
+      z-index: 10;
+      background-color: rgba(24, 255, 205, 0.5);
+    }
+
+    header.main-header h1 {
+      color: white;
+      font-size: 1.8em;
+      margin: 0;
+    }
+
+    header.main-header img.logo-header {
+      height: 50px;
+      border-radius: 10px;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 150px;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: center;
+    }
+
+    .content h1 {
+      color: #fff;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    .content p {
+      color: #fff;
+      font-size: 1.1em;
+      line-height: 1.6;
+      max-width: 800px;
+    }
+
+    canvas#background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  </style>
+</head>
+
+<body class="main-page">
+    <canvas id="background"></canvas>
+
+    <header class="main-header">
+        <img src="logo_arthur.jpg" alt="Logo Arthur & C°" class="logo-header" />
+        <h1>Arthur &amp; C°</h1>
+        <img src="Icones/home_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="Home" class="logo-header" onclick="window.location.href='main.html'" />
+    </header>
+
+<!-- IPAdress -->
 <script type="text/javascript" src="https://api.geoipview.com/api.php?t=0&amp;lang=fr&amp;w=180&amp;h=52&amp;bg=ECDDC0&amp;bd=8DADCC&amp;tx=222222&amp;lk=006699"></script><br>
 <noscript><a href="https://fr.geoipview.com" title="Localiser une adresse IP">https://fr.geoipview.com</a></noscript>
-<!-- END: GeoIPView.com IP Locator -->
+
+</body>
