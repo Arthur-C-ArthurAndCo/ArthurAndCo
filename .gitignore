@@ -15,3 +15,6 @@ Thumbs.db
 
 # Live Server / VSCode
 .vscode/
+
+# Utilisateurs
+utilisateurs.json
