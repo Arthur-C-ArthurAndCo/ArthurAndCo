@@ -1,16 +1,13 @@
 [
   {
-    "identifiant": "admin",
+    "identifiant": "Admin",
     "motdepasse": "azerty"
   },
   {
-    "identifiant": "Arthur",
+    "identifiant": "Arthur Corroyez",
     "motdepasse": "1234"
   },
-  {
-    "identifiant": "Invite",
-    "motdepasse": ""
-  },
+
   {
     "identifiant": "StaniCraft",
     "motdepasse": "1234"
@@ -18,5 +15,11 @@
   {
     "identifiant": "Suzie Dunczak",
     "motdepasse": "DM-426-SB"
+  },
+
+  
+  {
+    "identifiant": "Invite",
+    "motdepasse": ""
   }
 ]
