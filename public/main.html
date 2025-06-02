@@ -7,6 +7,58 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="style_main.css" />
   <link rel="icon" href="logo_arthur.jpg" />
+  <style>
+    /* Ajouté pour résoudre le problème */
+    .main-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80px; /* adapte selon la taille réelle de ton header */
+      background-color: white; /* ou transparent selon ton design */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    .content {
+      padding-top: 100px; /* égale ou un peu plus que la hauteur du header */
+      text-align: center;
+    }
+
+    .logo-header {
+      height: 60px;
+    }
+
+    .logout-icon {
+      height: 24px;
+      cursor: pointer;
+    }
+
+    .link {
+      color: #007bff;
+      text-decoration: underline;
+      margin: 10px 0;
+      cursor: pointer;
+    }
+
+    .modal-box button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .modal-box button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 
 <body class="main-page">
@@ -25,19 +77,12 @@
   </header>
 
   <div class="content">
-   <h1>Cette page sera bientôt redesigné. Merci de votre compréhension.</h1>
-   <h2>Lien vers les sites présents : </h2>
-   <p class="link" onclick="window.location.href='recordingdatas.html'" style="cursor: pointer;">
-   RecordingData
-   </p>
-   <p class="link" onclick="window.location.href='aboutyou.html'" style="cursor: pointer;">
-   AboutYou
-   </p>
-   <p class="link" onclick="window.location.href='https://stats.uptimerobot.com/Uwjnn1PHaX'" style="cursor: pointer;">
-   Status
-   </p>
- </div>
-
+    <h1>Cette page sera bientôt repensée afin de faciliter sa vue et son utilisation. Merci de votre compréhension.</h1>
+    <h2>Lien vers les sites présents : </h2>
+    <p class="link" onclick="window.location.href='recordingdatas.html'">RecordingData</p>
+    <p class="link" onclick="window.location.href='aboutyou.html'">AboutYou</p>
+    <p class="link" onclick="window.location.href='https://stats.uptimerobot.com/Uwjnn1PHaX'">Status</p>
+  </div>
 
   <!-- 🪟 Fenêtre modale -->
   <div id="welcome-modal" class="modal-backdrop show" role="dialog" aria-modal="true" aria-labelledby="modal-title" style="
@@ -65,18 +110,16 @@
       width: 90%;
     ">
       <div class="modal-box">
-      <h1 id="modal-title">Bienvenue chez Arthur &amp; C° ! ✨</h1>
-      <p>Nous pouvons venir à enregistrer des données anonymisées afin d'améliorer nos services.</p>
-      <p>En continuant, vous acceptez l'enregistrement de certaines de vos données.</p>
-      <p>Arthur & C° s'engage à n'utiliser aucun cookie de tracking, et le moins de cookies tiers possibles.</p>
-      <p class="link" onclick="window.location.href='recordingdatas.html'" style="cursor: pointer;">
-        En savoir plus sur ce qui sera enregistré
-      </p>
-      <button id="continue-button">
-        Continuer
-      </button>
+        <h1 id="modal-title">Bienvenue chez Arthur &amp; C° ! ✨</h1>
+        <p>Nous pouvons enregistrer des données anonymisées afin d'améliorer nos services.</p>
+        <p>En continuant, vous acceptez l'enregistrement de certaines de vos données.</p>
+        <p>Arthur & C° s'engage à n'utiliser aucun cookie de tracking, et le moins de cookies tiers possibles.</p>
+        <p class="link" onclick="window.location.href='recordingdatas.html'">En savoir plus sur ce qui sera enregistré</p>
+        <button id="continue-button">Continuer</button>
+      </div>
     </div>
   </div>    
+
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const modal = document.getElementById('welcome-modal');
@@ -104,7 +147,7 @@
       });
     });
   </script>
-  
+
   <script src="background.js"></script>
 </body>
 </html>
